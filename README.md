@@ -2,34 +2,55 @@
 
 **ML-powered churn risk scoring — Next.js + FastAPI + scikit-learn Random Forest**
 
-## Features
-- 🤖 **Random Forest model** — 200 trees, trained at startup on synthetic Telco-like data
-- 🎯 **Single prediction** — 10-feature customer form with real-time prediction
-- 📊 **Animated SVG gauge** — Shows churn probability 0–100% with color-coded risk tier
-- 📉 **Feature importance chart** — See exactly what drives churn predictions
-- 💡 **5 AI Retention Insights** — Personalized strategies based on customer profile
-- 📦 **Batch prediction** — Upload CSV for bulk scoring with summary dashboard
-- 🌙 **Light/Dark theme** — Neon blue pastel design, persistent preference
+## 🛡️ RiskGuard — AI-Powered Customer Churn Prediction
 
-## Model Performance
-| Metric | Score |
-|---|---|
-| Accuracy | ~85% |
-| AUC-ROC | ~90% |
-| Algorithm | Random Forest (200 trees, balanced classes) |
+![Project Banner](https://raw.githubusercontent.com/Vishnu-b-k/churn-prediction/main/assets/hero.png)
 
-## Quick Start
+**RiskGuard** is a production-grade machine learning application designed to identify at-risk customers before they churn. Built with **scikit-learn** and **FastAPI**, it provides real-time risk scoring, feature importance analysis, and AI-driven retention strategies.
 
-### 1. Backend (FastAPI + ML)
+---
+
+## 🌟 Key Features
+
+### 🧠 Random Forest Intelligence
+Features a robust **Random Forest Classifier** (200 trees) trained on customer behavior patterns. The model provides both a binary churn prediction and a granular probability score (Risk Gauge).
+
+### ⚡ Feature Importance Visualization
+Uses **Recharts** to dynamically visualize which factors (e.g., Monthly Charges, Tenure, Contract Type) are most heavily influencing a specific customer's churn risk.
+
+### 🇮🇳 Indian Market Localization
+Localized financial metrics for the Indian market, using **Rupee (₹) symbols** for monthly charges and total billings.
+
+### 💡 Personalized Retention Insights
+The system generates 5 contextual retention strategies based on the customer's profile:
+- **Contract Incentives**: Detecting long-term potential.
+- **Support Optimization**: Highlighting technical friction points.
+- **Pricing Adjustments**: Identifying price-sensitive segments.
+- **Service Bundling**: Suggestions based on existing usage.
+- **Loyalty Program Enrollment**: Triggered by high-value/long-tenure segments.
+
+---
+
+## 🛠️ Technical Stack
+
+- **ML Frontend**: Next.js 14, TypeScript, Framer Motion, Recharts.
+- **Predictive Backend**: FastAPI, scikit-learn, Pandas, Joblib.
+- **Model Architecture**: Random Forest (85% Accuracy baseline, trained on startup).
+- **Styling**: Cybernetic **Neon-Violet** Design System with glassmorphism UI.
+
+---
+
+## 🚀 Quick Start
+
+### 1. Backend Setup (FastAPI)
 ```bash
 cd backend
 pip install -r requirements.txt
 python main.py
-# → Trains model + runs on http://localhost:8001
-# → Training takes ~5 seconds on first start
 ```
+*Backend runs on `http://127.0.0.1:8001`.*
 
-### 2. Frontend (Next.js)
+### 2. Frontend Setup (Next.js)
 ```bash
 cd frontend
 npm install
