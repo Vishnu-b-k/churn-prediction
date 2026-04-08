@@ -33,10 +33,14 @@ The system generates 5 contextual retention strategies based on the customer's p
 
 ## 🛠️ Technical Stack
 
-- **ML Frontend**: Next.js 14, TypeScript, Framer Motion, Recharts.
-- **Predictive Backend**: FastAPI, scikit-learn, Pandas, Joblib.
-- **Model Architecture**: Random Forest (85% Accuracy baseline, trained on startup).
-- **Styling**: Cybernetic **Neon-Violet** Design System with glassmorphism UI.
+- **Backend** (Render): 
+    - Create a **Web Service**.
+    - Set **Root Directory** to `backend`.
+    - Build Command: `pip install -r requirements.txt`
+    - Start Command: `uvicorn main:app --host 0.0.0.0 --port 10000`
+- **Frontend** (Vercel): 
+    - Set **Root Directory** to `frontend`.
+    - Set Environment Variable `NEXT_PUBLIC_API_URL` to your Render URL.
 
 ---
 
